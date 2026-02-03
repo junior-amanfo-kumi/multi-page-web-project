@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | CTO</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="landingpage.html" aria-label="CTO Home">
+        <img src="/cto folder/images/logo.png" alt="CTO logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="landingpage.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a class="active" href="login.html">Login</a></li>
+          <li><a href="posts.html">Posts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="page-head">
+      <div>
+        <h1>Login</h1>
+        <p class="muted">Access your account to report sightings.</p>
+      </div>
+      <button id="logoutBtn" class="btn btn-ghost" type="button">Logout</button>
+    </div>
+
+    <div class="card">
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="loginUsername">Username</label>
+          <input id="loginUsername" name="username" type="text" required />
+        </div>
+
+        <div class="field">
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" name="password" type="password" required />
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Login</button>
+          <a class="btn btn-ghost" href="register.html">Create an account</a>
+        </div>
+
+        <div id="loginMsg" class="message" aria-live="polite"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer simple">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CTO.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

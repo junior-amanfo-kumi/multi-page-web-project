@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | CTO</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="landingpage.html" aria-label="CTO Home">
+        <img src="/cto folder/images/logo.png" alt="CTO logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="landingpage.html">Home</a></li>
+          <li><a class="active" href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="posts.html">Posts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <h1>Create your account</h1>
+    <p class="muted">Register as a CTO message board member.</p>
+
+    <div class="card">
+      <form id="registerForm" novalidate>
+        <div class="grid-2">
+          <div class="field">
+            <label for="regUsername">Username</label>
+            <input id="regUsername" name="username" type="text" minlength="3" maxlength="20" required />
+            <small class="hint">3–20 characters (letters/numbers recommended)</small>
+          </div>
+
+          <div class="field">
+            <label for="regPassword">Password</label>
+            <input id="regPassword" name="password" type="password" minlength="6" required />
+            <small class="hint">Minimum 6 characters</small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="regConfirm">Confirm password</label>
+          <input id="regConfirm" name="confirm" type="password" minlength="6" required />
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Register</button>
+          <a class="btn btn-ghost" href="login.html">Already have an account?</a>
+        </div>
+
+        <div id="registerMsg" class="message" aria-live="polite"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer simple">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CTO.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

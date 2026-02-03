@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Post | CTO</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="landingpage.html" aria-label="CTO Home">
+        <img src="images/ChatGPT Image Jan 8, 2026, 11_01_27 PM.png" alt="CTO logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="landingpage.html">Home</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a class="active" href="newpost.html">New Post</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="page-head">
+      <div>
+        <h1>Report a bird sighting</h1>
+        <p class="muted">Add an observation to the message board (image optional).</p>
+      </div>
+      <div class="pill" id="whoamiPill">Not logged in</div>
+    </div>
+
+    <div class="card">
+      <form id="postForm" novalidate>
+        <div class="grid-2">
+          <div class="field">
+            <label for="location">Location (Centrala region)</label>
+            <select id="location" required>
+              <option value="">Choose a region...</option>
+              <option>Erean</option><option>Brunad</option><option>Bylyn</option><option>Docia</option><option>Marend</option><option>Pryn</option>
+              <option>Zord</option><option>Yaean</option><option>Frestin</option><option>Stonyam</option><option>Ryall</option><option>Ruril</option>
+              <option>Keivia</option><option>Tallan</option><option>Adohad</option><option>Obelyn</option><option>Holmer</option><option>Vertwall</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="bird">Bird species</label>
+            <select id="bird" required>
+              <option value="">Choose a bird...</option>
+              <option>Wood Pigeon</option>
+              <option>House Sparrow</option>
+              <option>Starling</option>
+              <option>Blue Tit</option>
+              <option>Blackbird</option>
+              <option>Robin</option>
+              <option>Goldfinch</option>
+              <option>Magpie</option>
+              <option>Other / Unknown</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="dateObs">Date of observation</label>
+            <input id="dateObs" type="date" required />
+          </div>
+
+          <div class="field">
+            <label for="timeObs">Time of observation</label>
+            <input id="timeObs" type="time" required />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="activity">Primary activity</label>
+            <select id="activity" required>
+              <option value="">Choose...</option>
+              <option>Visit</option>
+              <option>Feeding</option>
+              <option>Nesting</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="duration">Duration (minutes)</label>
+            <input id="duration" type="number" min="1" max="1440" required />
+            <small class="hint">Enter a number from 1–1440</small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="comments">Comments</label>
+          <textarea id="comments" rows="4" maxlength="500" placeholder="What did you see? (max 500 chars)" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="photo">Photo (optional: JPG/PNG, max 1.2MB)</label>
+          <input id="photo" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" />
+          <small class="hint">We’ll validate type + size on the client side.</small>
+          <div class="preview" id="imgPreview" hidden>
+            <img id="previewImg" alt="Selected image preview" />
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Submit Post</button>
+          <a class="btn btn-ghost" href="posts.html">Back to posts</a>
+        </div>
+
+        <div id="postMsg" class="message" aria-live="polite"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer simple">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CTO.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

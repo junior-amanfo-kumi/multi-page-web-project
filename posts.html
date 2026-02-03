@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts | CTO</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="landingpage.html" aria-label="CTO Home">
+        <img src="/cto folder/images/logo.png" alt="CTO logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="landingpage.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a class="active" href="posts.html">Posts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="page-head">
+      <div>
+        <h1>Observations</h1>
+        <p class="muted">Search posts and view sightings across Centrala.</p>
+      </div>
+      <div class="head-actions">
+        <a class="btn btn-primary" href="newpost.html">+ New Post</a>
+        <button class="btn btn-ghost" id="logoutBtn2" type="button">Logout</button>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <input id="searchBox" type="search" placeholder="Search by keyword, bird, location, username..." />
+      <div class="pill" id="loggedInAs">Not logged in</div>
+    </div>
+
+    <div id="postsMsg" class="message" aria-live="polite"></div>
+
+    <section id="postsList" class="posts"></section>
+  </main>
+
+  <footer class="footer simple">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 CTO.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

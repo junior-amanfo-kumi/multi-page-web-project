@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTO Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="landingpage.html" aria-label="CTO Home">
+        <img src="images/logo.png" alt="CTO logo" />
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="landingpage.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="posts.html">Posts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="main-content">
+        <h1>Helping Centrala<br />Understand Its Birds</h1>
+        <p>Join us in tracking and protecting our local birdlife.</p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" id="getStartedBtn">Get Started</button>
+          <a class="btn btn-ghost" href="register.html">Create an account</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+
+  <footer class="footer" id="footerActions">
+    <div class="container footer-grid">
+      <button class="footer-item" type="button" data-action="report" aria-label="Report Sighting">
+        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2 L15 8 L22 9 L17 14 L18 22 L12 18 L6 22 L7 14 L2 9 L9 8 Z"
+            stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <span>Report Sighting</span>
+      </button>
+
+      <button class="footer-item" type="button" data-action="view" aria-label="View Observations">
+        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 12 C5 6, 19 6, 22 12 C19 18, 5 18, 2 12 Z"
+            stroke="currentColor" stroke-width="2" fill="none" />
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <span>View Observations</span>
+      </button>
+
+      <button class="footer-item" type="button" data-action="learn" aria-label="Learn About Birds">
+        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 4 H11 V20 H3 Z" stroke="currentColor" stroke-width="2" fill="none" />
+          <path d="M13 4 H21 V20 H13 Z" stroke="currentColor" stroke-width="2" fill="none" />
+        </svg>
+        <span>Learn About Birds</span>
+      </button>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Centrala Trust for Ornithology (CTO). All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+  <!-- I added a script for distinction criteria, switch to this instead:
+  <script src="script.min.js"></script>
+  -->
+</body>
+</html>
+
