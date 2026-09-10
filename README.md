@@ -1,16 +1,25 @@
-Web Development Project – Multi-Page Website
+# Multi-Page Web Project
 
-This project was built using HTML, CSS, and JavaScript as part of my ATHE Level 4 Diploma in Computing.
+A multi-page website built using HTML, CSS and JavaScript as part of my ATHE Level 4 Diploma in Computing.
 
-Features:
+## Features
+
 - Landing page
-- Login and Register pages
-- Posts and New Post pages
+- Login and registration pages
+- Posts and new post pages
 - Responsive styling
 - Basic JavaScript interactivity
 
-Technologies:
-HTML5, CSS3, JavaScript
+## Technologies Used
 
-Author:
+- HTML5
+- CSS3
+- JavaScript
+
+## What I Learned
+
+This project helped me strengthen my understanding of webpage structure, styling, basic front-end interactivity and how multiple pages work together within a website.
+
+## Author
+
 Junior Amanfo
