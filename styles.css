@@ -36,7 +36,7 @@ a{color:inherit;text-decoration:none}
   display:flex;align-items:center;
   background:
     linear-gradient(180deg, rgba(11,18,32,.62), rgba(11,18,32,.92)),
-    url("images/hero-birds.jpg");
+   url("images/hero-birds.png");
   background-size:cover;
   background-position:center;
   border-bottom:1px solid var(--line);
